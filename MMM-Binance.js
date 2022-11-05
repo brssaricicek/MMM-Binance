@@ -44,6 +44,7 @@ Module.register("MMM-Binance", {
         var td = document.createElement('td')
         var divPer = document.createElement('div')
         divPer.id = this.config.currencies[i].toLowerCase()+"Per"
+        divPer.setAttribute("class","divPer")
         divPer.innerHTML = "0 %"
         td.appendChild(divPer)
         tr.appendChild(td)

@@ -64,7 +64,7 @@ Module.register("MMM-Binance", {
         let stockPriceElement = document.getElementById(stockObject.s.toLowerCase()+"P");
         stockPriceElement.innerHTML = parseFloat(stockObject.c).toFixed(this.config.decimalPlaces) 
         let stockPricePerElement = document.getElementById(stockObject.s.toLowerCase()+"Per");
-        stockPricePerElement.innerHTML = parseFloat(stockObject.P).toFixed(this.config.decimalPlaces) + " %"
+        stockPricePerElement.innerHTML = parseFloat(stockObject.p).toFixed(this.config.decimalPlaces) +" (" + parseFloat(stockObject.P).toFixed(this.config.decimalPlaces) + " %)"
         if(stockObject.P<0)
           stockPricePerElement.style.color ="red"
         if(stockObject.P>0)

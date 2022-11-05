@@ -4,6 +4,7 @@ Module.register("MMM-Binance", {
     defaults: {
       currencies: ['btcusdt','ethusdt'],
       decimalPlaces: 2, 
+      fontSize: ""
     },
 
     getStyles: function() {
@@ -57,6 +58,8 @@ Module.register("MMM-Binance", {
 
     getDom: function() {
       this.createTable()
+      if (this.config.fontSize!="")
+        this.element.style.fontSize = this.config.fontSize
       var burl = 'wss://stream.binance.com:9443/ws/'
       var url = burl+this.sCurrencies
       let ws = new WebSocket(url);

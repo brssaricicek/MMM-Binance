@@ -1,0 +1,8 @@
+tr{
+    padding-top: 4px;
+}
+td{
+    padding: 0 10px ;
+    border-bottom: solid 1px rgb(42, 41, 41);
+    text-align: left;
+}

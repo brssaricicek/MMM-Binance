@@ -23,10 +23,11 @@ var config = {
         ...
         {
             module: 'MMM-Binance',
-            position: "top_rigt",
+            position: "top_right",
             header: "Binance Cryptocurrencies",
             config: {
                 currencies: ['btcusdt','ethusdt'],
+                futuresCurrencies: ['bnbusdt'],
                 decimalPlaces: 2,        
             }
         },
@@ -40,5 +41,6 @@ var config = {
 | Option                  |                                                                                                                          |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------|
 | `currencies`            |**Default:** `['btcusdt', 'ethusdt']`<br /> **Type:** Array                                                               |
+| `futuresCurrencies`      |Optional - If one needs to listen to the futures data of a ticker    |**Default:** `['bnbusdt']`<br /> **Type:** Array                                                               |
 | `decimalPlaces`         |Optional - How many digits to display in the price after the decimal. <br> **Default:** `2`<br />  **Type:** Integer <br> |
 | `fontSize`               |Optional -Changes the font size. <br  />  **Type:** String <br>  **Property Values:**  xx-small, x-small, small, medium, large, x-large, xx-large, <br>  smaller : Decreases the font-size by one relative unit. <br> larger: Increases the font-size by one relative unit. <br> length: Defines the font-size in length units. <br> % : Sets the font-size to a % of the parent element's font size  |
